@@ -38,7 +38,7 @@ RUN \
     /usr/bin/unzip master.zip && \
     rm master.zip && \
     cd rtpipe-master && \
-    rm rtlib_cython.so && \
+    rm rtlib_cython.c rtlib_cython.so && \
     # build cython code
     python setup.py build_ext --inplace && \
     # place in python path
